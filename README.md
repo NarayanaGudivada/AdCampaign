@@ -38,7 +38,7 @@ Getting Started
 Sample URL's
 -------------
 
->- To get all Ad Campaigns - GET Request - http://localhost:8080/api/advertisings
+>- To get all Ad Campaigns - GET Request - http://<host:port>/api/advertisings
 
 **Sample Response:**
 
@@ -46,35 +46,36 @@ Sample URL's
   {
     "partnerId": 1,
     "duration": 600,
-    "adContent": "Hellow World!. This is your Ad3",
+    "adContent": "Hellow World!. This is your Ad1",
     "expiresIn": "412 Seconds"
   },
   {
     "partnerId": 2,
     "duration": 600,
-    "adContent": "Hellow World!. This is your Ad3",
+    "adContent": "Hellow World!. This is your Ad2",
     "expiresIn": "513 Seconds"
   }
 ]
 
 
->- To get a specific Advertisement based on partnerId - GET Request - http://localhost:8080/api/advertisings/1
+>- To get a specific Advertisement based on partnerId - GET Request - http://<host:port>/api/advertisings/<partnerId>
 
 **Sample Response:**
 
 {
     "partnerId": 1,
     "duration": 600,
-    "adContent": "Hellow World!. This is your Ad3",
+    "adContent": "Hellow World!. This is your Ad1",
     "expiresIn": "412 Seconds"
   }
   
->- To create an Ad campaign - POST - http://localhost:8080/api/advertisings
+>- To create an Ad campaign - POST Request - http://<host:port>/api/advertisings
 
 **Request Body:**
 
-{	"partnerId": 6,
-	"duration" : "60",
+{ 
+  "partnerId": 6,
+  "duration" : "60",
   "adContent" : "Hellow World!. This is your Ad6"
 }
 
